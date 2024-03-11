@@ -12,7 +12,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="#0989FF"
         tools:ignore="MissingConstraints"
         android:id="@+id/navbar">
@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="File Manager"
-            android:layout_margin="30dp"
+            android:layout_margin="23dp"
             android:textColor="#F8F8F8"
             android:textSize="25sp"/>
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/menu_vector"
             android:layout_gravity="end|center"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:contentDescription="MENU" />
 
     </FrameLayout>
@@ -95,10 +95,9 @@
 
                     <!-- The text that goes in a center of the chart -->
                     <TextView
-                        android:id="@+id/number_of_calories"
+                        android:id="@+id/storage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="67 / 128"
                         android:textSize="16sp"
                         android:textColor="#000"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,15 +117,15 @@
                     tools:ignore="RtlSymmetry">
 
                     <TextView
+                        android:id="@+id/free"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="67 GB Free"
                         android:textColor="#000"
                         android:textSize="20sp"/>
                     <TextView
+                        android:id="@+id/totalIdentifier"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Of 128 GB"
                         android:textColor="#0989FF"
                         android:textSize="30sp"/>
                 </LinearLayout>
@@ -150,8 +149,11 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:background="@drawable/border"
+                    android:id="@+id/images_button"
+                    android:onClick="toImages"
                     android:layout_margin="15dp">
-                    <ImageButton
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/images"/>
@@ -168,9 +170,10 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:id="@+id/audios_button"
                     android:background="@drawable/border"
                     android:layout_margin="15dp">
-                    <ImageButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/music"/>
@@ -187,9 +190,10 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:id="@+id/videos_button"
                     android:background="@drawable/border"
                     android:layout_margin="15dp">
-                    <ImageButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/videos"/>
@@ -217,9 +221,10 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:id="@+id/docs_button"
                     android:background="@drawable/border"
                     android:layout_margin="15dp">
-                    <ImageButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/documents"/>
@@ -236,9 +241,10 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:id="@+id/apps_button"
                     android:background="@drawable/border"
                     android:layout_margin="15dp">
-                    <ImageButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/apps"/>
@@ -255,9 +261,10 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:id="@+id/folders_button"
                     android:background="@drawable/border"
                     android:layout_margin="15dp">
-                    <ImageButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/folders"/>
